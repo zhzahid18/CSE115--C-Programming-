@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1555670931 source:c:\users\hp npc\desktop\project\online shopping\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

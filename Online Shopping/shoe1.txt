@@ -1,0 +1,4 @@
+Synthetic
+Casual
+9,10,12
+600

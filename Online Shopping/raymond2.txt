@@ -1,0 +1,4 @@
+100% Cotton
+Casual+Formal
+M,L,XL,XXL
+800

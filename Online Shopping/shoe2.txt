@@ -1,0 +1,4 @@
+Synthetic
+Low-cut and flexible
+9,10,12
+900 
