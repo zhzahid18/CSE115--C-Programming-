@@ -3,7 +3,7 @@
 #include <time.h>
 int main()
 {
-    int m,sum=0, myScore=0;
+    int m,cpuScore=0, myScore=0;
     srand(time(0));
     printf("\t\t\t\t:)_:)_30 balls cRiCkEt mAtCh_:)_:)");
     printf("\n\t\t\t\tGame Characteristic & Rules:");
@@ -16,13 +16,13 @@ int main()
         printf("\n\tBall no. %d",i);
     for (int i = 0; i<1; i++) {
         int num = (rand() % 6)+1;
-        sum=sum+num;
+        cpuScore=cpuScore+num;
         printf("\n\tRun: %d",num);
     }
     printf("\n");
 
     }
-    printf("\n\tTotal Scores of CPU: %d",sum);
+    printf("\n\tTotal Scores of CPU: %d",cpuScore);
 
     printf("\n");
 
@@ -37,6 +37,7 @@ int main()
             printf("\n\tHit to score: ");
             scanf("%d",&input);
             int num2= (rand() % 6)+1;
+
             if(input==num2 || input==0 || input>6)
             {
                 printf("\tNo Score");
@@ -47,7 +48,7 @@ int main()
                myScore=myScore+input;
         }
         printf("\n");
-        if(myScore>sum)
+        if(myScore>cpuScore)
         {
             printf("\n\tYour Total Scores : %d",myScore);
             printf("\n\tCONGRATULATION! You won the GAME!!!");
@@ -55,11 +56,12 @@ int main()
         }
     }
 
-    printf("\n\tYour Total Scores : %d",myScore);
-
-    if(sum>myScore)
-        printf("\n\tCPU wins!!! You lose the GAME!! Better Next Time!");
-    else if(sum==myScore)
+    if(cpuScore>myScore){
+            printf("\n\tYour Total Scores : %d",myScore);
+        printf("\n\tCPU wins!!! You have lost match by %d runs!! Better Luck Next Time!",cpuScore-myScore);
+    }
+    else if(cpuScore==myScore){
+            printf("\n\tYour Total Scores : %d",myScore);
         printf("\n\tWhat a GAME!! Match Tied!");
-
+    }
 }
