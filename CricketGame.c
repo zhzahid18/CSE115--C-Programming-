@@ -142,40 +142,4 @@ int main()
 }
 }
 
-        printf("\n\tCPU wins!!! You have lost match by %d runs!! Better Luck Next Time!",cpuScore-myScore);
-    }
-    else if(cpuScore==myScore){
-            printf("\n\tYour Total Scores : %d",myScore);
-        printf("\n\tWhat a GAME!! Match Tied!");
-    }
-
-}
-
-
-            if(input==num2 || input==0 || input>6)
-            {
-                printf("\tNo Score");
-                num2=0;
-                input=0;
-            }
-            else
-               myScore=myScore+input;
-        }
-        printf("\n");
-        if(myScore>cpuScore)
-        {
-            printf("\n\tYour Total Scores : %d",myScore);
-            printf("\n\tCONGRATULATION! You won the GAME!!!");
-            break;
-        }
-    }
-
-    if(cpuScore>myScore){
-            printf("\n\tYour Total Scores : %d",myScore);
-        printf("\n\tCPU wins!!! You have lost match by %d runs!! Better Luck Next Time!",cpuScore-myScore);
-    }
-    else if(cpuScore==myScore){
-            printf("\n\tYour Total Scores : %d",myScore);
-        printf("\n\tWhat a GAME!! Match Tied!");
-    }
-}
+       
